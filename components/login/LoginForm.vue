@@ -24,7 +24,10 @@ async function onSubmit(event) {
 </script>
 <template>
   <div class="loginContainer">
-    <h1 class="text-3xl mb-3 font-bold">Login</h1>
+    <!-- Logo -->
+    <img src="~/assets/images/route_master_logo.png" class="logo"/>
+
+    <h1 class="text-3xl mb-3 font-bold">Inicio de Sesión</h1>
     <UForm
       :validate="validateForm"
       :state="state"
@@ -50,5 +53,13 @@ async function onSubmit(event) {
 <style scoped>
 .loginContainer {
   width: 350px;
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  max-width: 150px; /* Adjust the max-width according to your design */
+  margin: 0 auto 20px; /* Center the image horizontally and add margin below */
 }
 </style>
